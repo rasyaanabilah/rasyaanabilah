@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matriks Rasyaa</title>
+    <link rel="stylesheet" href="matriks.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Matriks Rasyaa</h1>
+        <p>Isi elemen matriksnya dan pilih operasi:</p>
+        
+        <div class="matrices">
+            <!-- Matriks A -->
+            <div class="matrix">
+                <h3>Matriks A</h3>
+                <table>
+                    <tr>
+                        <td><input type="number" id="a11" value="0"></td>
+                        <td><input type="number" id="a12" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" id="a21" value="0"></td>
+                        <td><input type="number" id="a22" value="0"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Matriks B -->
+            <div class="matrix">
+                <h3>Matriks B</h3>
+                <table>
+                    <tr>
+                        <td><input type="number" id="b11" value="0"></td>
+                        <td><input type="number" id="b12" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" id="b21" value="0"></td>
+                        <td><input type="number" id="b22" value="0"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Tombol Operasi -->
+        <div class="operations">
+            <button onclick="calculate('add')">Penjumlahan</button>
+            <button onclick="calculate('subtract')">Pengurangan</button>
+            <button onclick="calculate('multiply')">Perkalian</button>
+        </div>
+
+        <!-- Hasil -->
+        <div class="result-table" id="result"></div>
+    </div>
+
+    <script src="matriks.js"></script>
+</body>
+</html>
